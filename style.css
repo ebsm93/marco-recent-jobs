@@ -7,7 +7,7 @@ html, body {
     /* color: antiquewhite; */
     /* text-shadow: 1px 2px 2px rgb(0, 0, 0); */
     /* max-width: 100%; */
-    /* overflow-x: hidden; */
+    overflow-x: hidden;
 }
 
 body {
