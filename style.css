@@ -39,16 +39,21 @@ body {
 
 .title {
     font-size: 2.4em;
+    font-weight: 700;
     text-decoration: underline;
+
 }
 
 .header {
+    margin-top: 1vh;
+    margin-bottom: 1vh;
     padding: 1.5vw;
     background-color: rgb(240, 248, 255, 0.4);
     animation: head-bg-trans 2s forwards;
     text-align: center;
     width: 90vw;
     border-radius: 20px;
+    justify-self: center;
 }
 
 @keyframes head-bg-trans {
@@ -72,6 +77,32 @@ body {
 }
 
 .licenses {
+}
+
+.slide-left-center {
+    animation: slide-left 0.5s forwards;
+}
+
+.slide-left-center-2 {
+    animation: slide-left 1s forwards;
+}
+
+.slide-left-center-3 {
+    animation: slide-left 1.5s forwards;
+}
+
+@keyframes slide-left {
+    from {
+        transform: translateX(-100%);      
+    }
+    
+    50% {
+        /* transform: translateY(-350%);    */
+    }
+    
+    to {
+        transform: translateX(0%);
+    }
 }
 
 img {
@@ -104,6 +135,7 @@ img {
     width: fit-content;
     border-radius: 5px;
     font-weight: 700;
+    border: 1px solid white;
 }
 
 .feed-item {
@@ -128,6 +160,10 @@ img {
 
     img {
         width: 30vw
+    }
+
+    .feed-item {
+        width: 60vw;
     }
 
 }
