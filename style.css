@@ -1,12 +1,7 @@
 
 
 html, body {
-    /* padding: 0; */
-    /* margin: 0; */
     height: 100%;
-    /* color: antiquewhite; */
-    /* text-shadow: 1px 2px 2px rgb(0, 0, 0); */
-    /* max-width: 100%; */
     overflow-x: hidden;
 }
 
@@ -71,8 +66,12 @@ body {
 }
 
 .intro-text {
-    text-align: start;
-    padding-left: 5vw;
+}
+
+.byline {
+}
+
+.licenses {
 }
 
 img {
@@ -80,6 +79,7 @@ img {
     height: auto;
     border: 2px solid white;   
     border-radius: 10px; 
+    box-shadow: 5px 5px 5px black;
 }
 
 .no-bullets {
@@ -102,12 +102,18 @@ img {
     align-items: center;
     align-self: center;
     width: fit-content;
+    border-radius: 5px;
 }
 
-li {
+.feed-item {
     display: flex;
     flex-direction: column;
+    gap: 1vh;
     align-items: center;
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 10px;
+    width: 85vw;
 }
 @media (min-width: 500px) {
 
