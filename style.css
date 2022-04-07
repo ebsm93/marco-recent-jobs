@@ -19,6 +19,7 @@ body {
     background-attachment: fixed;
     margin: 0;
     font-size: 18px;
+    font-weight: 700;
 }
 
 .page-wrap {
@@ -63,8 +64,12 @@ body {
     border-radius: 20px;
     justify-self: center;
     border: 1px solid white;
-    font-weight: 700;
+    
     letter-spacing: 1px;
+
+    /* display: grid; */
+    /* flex-direction: column; */
+    /* align-content: center; */
 
 }
 
@@ -83,6 +88,9 @@ body {
 }
 
 .intro-text {
+    display: flex;
+    flex-direction: column;
+
 }
 
 .byline {
@@ -92,15 +100,15 @@ body {
 }
 
 .slide-left-center {
-    animation: slide-left 0.5s forwards;
-}
-
-.slide-left-center-2 {
     animation: slide-left 1s forwards;
 }
 
+.slide-left-center-2 {
+    animation: slide-left 1.3s forwards;
+}
+
 .slide-left-center-3 {
-    animation: slide-left 1.5s forwards;
+    animation: slide-left 1.7s forwards;
 }
 
 @keyframes slide-left {
@@ -115,6 +123,17 @@ body {
     to {
         transform: translateX(0%);
     }
+}
+
+.contact {
+    border: 1px solid white;
+    border-radius: 10px;
+    background-color: rgb(53, 97, 138, 0.9);
+    padding: 2vh;
+    align-self: center;
+    width: fit-content;
+    text-align: start;
+
 }
 
 img {
@@ -161,6 +180,17 @@ img {
     padding: 10px;
     width: 85vw;
 }
+
+.footer {
+
+    
+    text-align: center;
+    width: fit-content;
+    justify-self: center;
+    border-radius: 10px;
+    margin: 1vh;
+
+}
 @media (min-width: 500px) {
 
     body {
@@ -177,6 +207,11 @@ img {
 
     .feed-item {
         width: 60vw;
+    }
+
+    .contact {
+        /* display: grid; */
+        
     }
 
 }
