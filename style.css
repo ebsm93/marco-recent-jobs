@@ -71,7 +71,7 @@ body {
 }
 
 .header {
-    margin-bottom: 1vh;
+    margin-bottom: 3vh;
     padding: 1.5vw;
     animation: head-bg-trans 2s forwards;
     text-align: center;
@@ -152,6 +152,21 @@ img {
     box-shadow: 7px 7px 8px black;
 }
 
+.feed {
+    display: grid;
+}
+
+.feed-title {
+    font-size: 1.4em;
+    text-align: center;
+    width: 90%;
+    background-color: var(--main-thematic-bg-color);
+    border-radius: 5px;
+
+    align-self: center;
+    justify-self: center;
+}
+
 .no-bullets {
     padding: 0;
     list-style: none;
@@ -219,6 +234,12 @@ img {
 
     img {
         width: 30vw
+    }
+
+    .feed-title {
+        /* font-size: 1.3em; */
+        width: 65%;
+        padding: 0.7vw;
     }
 
     .feed-item {
