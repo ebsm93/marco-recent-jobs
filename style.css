@@ -1,4 +1,3 @@
-
 :root {
     --root-font-size: 18px;
     --root-font-weight: 700;
@@ -6,11 +5,14 @@
     --root-font-shadow: 1px 1px 1px black;
     --a-color: rgb(37, 146, 146);
 
+    --main-thematic-bg-color: rgb(53, 97, 138, 0.9);
+    --main-thematic-bg-color-transparent: rgb(53, 97, 138, 0);
     --title-font-size: 2.1em;
     --title-font-color: antiquewhite;
 }
 
-html, body {
+html,
+body {
     height: 100%;
     overflow-x: hidden;
 }
@@ -21,12 +23,12 @@ a {
 
 body {
     background-image: url('./images-marco/jesse-orrico-L94dWXNKwrY-unsplash.jpg');
-    background-size:cover;
+    background-size: cover;
     background-position: center;
     background-attachment: fixed;
     margin: 0;
     font-size: var(--root-font-size);
-    font-weight: var(--root-font-weight);   
+    font-weight: var(--root-font-weight);
 }
 
 .page-wrap {
@@ -53,20 +55,19 @@ body {
 }
 
 .title {
+    background-color: var(--main-thematic-bg-color);
     font-size: var(--title-font-size);
     color: var(--title-font-color);
     text-decoration: underline;
     text-align: center;
+    width: fit-content;
+    margin: 2vh;
+    border-radius: 10px;
+    justify-self: center;
 
     position: sticky;
     top: 0px;
     z-index: 1;
-    background-color: rgb(53, 97, 138, 0.9);
-    width: fit-content;
-    margin: 2vh;
-    border-radius: 10px;
-
-
 }
 
 .header {
@@ -83,15 +84,15 @@ body {
 
 @keyframes head-bg-trans {
     from {
-        background-color: rgb(240, 248, 255, 0);
+        background-color: var(--main-thematic-bg-color-transparent);
     }
 
     50% {
-        background-color: rgb(240, 248, 255, 0);
+        background-color: var(--main-thematic-bg-color-transparent);
     }
 
     to {
-        background-color: rgb(53, 97, 138, 0.9);
+        background-color: var(--main-thematic-bg-color);
     }
 }
 
@@ -120,13 +121,13 @@ body {
 
 @keyframes slide-left {
     from {
-        transform: translateX(-100%);      
+        transform: translateX(-100%);
     }
-    
+
     50% {
         /* transform: translateY(-350%);    */
     }
-    
+
     to {
         transform: translateX(0%);
     }
@@ -146,8 +147,8 @@ body {
 img {
     width: 60vw;
     height: auto;
-    border: 2px solid white;   
-    border-radius: 10px; 
+    border: 2px solid white;
+    border-radius: 10px;
     box-shadow: 7px 7px 8px black;
 }
 
@@ -190,7 +191,7 @@ img {
 
 .footer {
 
-    
+
     text-align: center;
     width: fit-content;
     justify-self: center;
@@ -198,10 +199,17 @@ img {
     margin: 1vh;
 
 }
+
 @media (min-width: 500px) {
 
     body {
         font-size: calc(20px + 0.3vw);
+    }
+
+    .title {
+        font-size: calc(var(--title-font-size) + 0.4vw); 
+        padding: 1.5vw;
+        padding-top: 1vw;
     }
 
     .header {
@@ -218,7 +226,7 @@ img {
 
     .contact {
         /* display: grid; */
-        
+
     }
 
 }
