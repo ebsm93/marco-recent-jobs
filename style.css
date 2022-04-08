@@ -1,6 +1,13 @@
 
 :root {
+    --root-font-size: 18px;
+    --root-font-weight: 700;
+    --root-font-color: rgb(204, 140, 20);
+    --root-font-shadow: 1px 1px 1px black;
+    --a-color: rgb(37, 146, 146);
 
+    --title-font-size: 2.1em;
+    --title-font-color: antiquewhite;
 }
 
 html, body {
@@ -9,7 +16,7 @@ html, body {
 }
 
 a {
-    color: rgb(37, 146, 146);
+    color: var(--a-color);
 }
 
 body {
@@ -18,8 +25,8 @@ body {
     background-position: center;
     background-attachment: fixed;
     margin: 0;
-    font-size: 18px;
-    font-weight: 700;
+    font-size: var(--root-font-size);
+    font-weight: var(--root-font-weight);   
 }
 
 .page-wrap {
@@ -31,8 +38,8 @@ body {
     display: grid;
     justify-content: center;
 
-    color: rgb(204, 140, 20);
-    text-shadow: 1px 1px 1px black
+    color: var(--root-font-color);
+    text-shadow: var(--root-font-shadow);
 }
 
 @keyframes bg-trans {
@@ -46,31 +53,32 @@ body {
 }
 
 .title {
-    font-size: 2.1em;
-    color: antiquewhite;
-    /* font-weight: 700; */
+    font-size: var(--title-font-size);
+    color: var(--title-font-color);
     text-decoration: underline;
+    text-align: center;
+
+    position: sticky;
+    top: 0px;
+    z-index: 1;
+    background-color: rgb(53, 97, 138, 0.9);
+    width: fit-content;
+    margin: 2vh;
+    border-radius: 10px;
+
 
 }
 
 .header {
-    margin-top: 1vh;
     margin-bottom: 1vh;
     padding: 1.5vw;
-    /* background-color: rgb(240, 248, 255); */
     animation: head-bg-trans 2s forwards;
     text-align: center;
     width: 90vw;
     border-radius: 20px;
     justify-self: center;
     border: 1px solid white;
-    
     letter-spacing: 1px;
-
-    /* display: grid; */
-    /* flex-direction: column; */
-    /* align-content: center; */
-
 }
 
 @keyframes head-bg-trans {
@@ -90,14 +98,13 @@ body {
 .intro-text {
     display: flex;
     flex-direction: column;
-
 }
 
-.byline {
+/* .byline {
 }
 
 .licenses {
-}
+} */
 
 .slide-left-center {
     animation: slide-left 1s forwards;
