@@ -17,10 +17,6 @@ body {
     overflow-x: hidden;
 }
 
-a {
-    color: var(--a-color);
-}
-
 body {
     background-image: url('./images-marco/jesse-orrico-L94dWXNKwrY-unsplash.jpg');
     background-size: cover;
@@ -52,6 +48,18 @@ body {
     to {
         background-color: rgb(0, 0, 0, 0);
     }
+}
+
+a {
+    color: var(--a-color);
+}
+
+img {
+    width: 60vw;
+    height: auto;
+    border: 2px solid white;
+    border-radius: 10px;
+    box-shadow: 7px 7px 8px black;
 }
 
 .title {
@@ -142,14 +150,6 @@ body {
     width: fit-content;
     text-align: start;
 
-}
-
-img {
-    width: 60vw;
-    height: auto;
-    border: 2px solid white;
-    border-radius: 10px;
-    box-shadow: 7px 7px 8px black;
 }
 
 .feed {
